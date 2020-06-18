@@ -37,24 +37,23 @@ public class BookController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
+        //factory method
         return new ResponseEntity<>(book, HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity<Book> saveBook(@RequestBody @Valid Book book) {
-        HttpHeaders headers = new HttpHeaders();
 
         if (book == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
         this.bookService.saveBook(book);
-        return new ResponseEntity<>(book, headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(book, HttpStatus.CREATED);
     }
 
     @PutMapping
     public ResponseEntity<Book> updateBook(@RequestBody @Valid Book book, UriComponentsBuilder builder) {
-        HttpHeaders headers = new HttpHeaders();
 
         if (book == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -62,7 +61,7 @@ public class BookController {
 
         this.bookService.saveBook(book);
 
-        return new ResponseEntity<>(book, headers, HttpStatus.OK);
+        return new ResponseEntity<>(book, HttpStatus.OK);
     }
 
     @DeleteMapping(value = "{id}")
