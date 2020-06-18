@@ -1,0 +1,11 @@
+ ResponseType
+ ResponseEntity
+ @PathVariable VS @RequestParam
+ DAO & DTO
+ reference (manytomany, oneToMane, etc)
+ package structure (by layer vs by models)
+ working with DB
+ conflicts of type
+ nonNull
+
+
