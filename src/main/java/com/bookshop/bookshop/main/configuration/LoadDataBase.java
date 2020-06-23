@@ -1,8 +1,7 @@
 package com.bookshop.bookshop.main.configuration;
 
-import com.bookshop.bookshop.main.entities.Book;
-import com.bookshop.bookshop.main.repositories.BookRepository;
-import java.util.ArrayList;
+import com.bookshop.bookshop.main.goods.Book;
+import com.bookshop.bookshop.main.goods.BookRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -16,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 class LoadDataBase {
 
     @Bean
-    CommandLineRunner initDatabase(BookRepository repository) { // service or repo
+    CommandLineRunner initDatabase(BookRepository repository) {
 
         return args -> {
             log.info("Preloading " + repository.saveAll(generateInitBooks(5)));

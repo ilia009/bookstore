@@ -1,7 +1,5 @@
-package com.bookshop.bookshop.main.service;
+package com.bookshop.bookshop.main.goods;
 
-import com.bookshop.bookshop.main.entities.Book;
-import java.math.BigDecimal;
 import java.util.List;
 
 public interface BookService {

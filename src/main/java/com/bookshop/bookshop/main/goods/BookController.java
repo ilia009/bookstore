@@ -1,11 +1,8 @@
-package com.bookshop.bookshop.main.controllers;
+package com.bookshop.bookshop.main.goods;
 
-import com.bookshop.bookshop.main.entities.Book;
-import com.bookshop.bookshop.main.service.BookService;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -37,7 +34,6 @@ public class BookController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        //factory method
         return new ResponseEntity<>(book, HttpStatus.OK);
     }
 

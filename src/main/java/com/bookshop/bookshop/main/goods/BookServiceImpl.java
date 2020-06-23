@@ -1,7 +1,5 @@
-package com.bookshop.bookshop.main.service;
+package com.bookshop.bookshop.main.goods;
 
-import com.bookshop.bookshop.main.entities.Book;
-import com.bookshop.bookshop.main.repositories.BookRepository;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
