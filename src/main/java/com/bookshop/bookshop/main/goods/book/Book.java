@@ -1,4 +1,4 @@
-package com.bookshop.bookshop.main.goods;
+package com.bookshop.bookshop.main.goods.book;
 
 import java.io.Serializable;
 import java.util.List;
@@ -28,23 +28,9 @@ public class Book implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     @NonNull
-    @Column()
+    @Column
     private String title;
     @Column
     private int price;
 
-}
-@Entity
-class Author {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
-
-    @Column
-    private String name;
-
-    @Column
-    @ManyToMany
-    private List<Book> bookList;
 }

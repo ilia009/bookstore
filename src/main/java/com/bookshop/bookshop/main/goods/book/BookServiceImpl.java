@@ -1,4 +1,4 @@
-package com.bookshop.bookshop.main.goods;
+package com.bookshop.bookshop.main.goods.book;
 
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;

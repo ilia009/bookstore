@@ -1,4 +1,4 @@
-package com.bookshop.bookshop.main.goods;
+package com.bookshop.bookshop.main.goods.book;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
-@RequestMapping("/api/v1/books/")
+@RequestMapping("/books/")
 public class BookController {
 
     @Autowired
