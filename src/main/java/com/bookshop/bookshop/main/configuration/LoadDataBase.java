@@ -46,7 +46,7 @@ class LoadDataBase {
         roleRepository
                 .save(new Role(1L,new Date(), new Date(), Status.ACTIVE,"ADMIN"));
         roleRepository
-                .save(new Role(2L,new Date(), new Date(), Status.ACTIVE,"ADMIN"));
+                .save(new Role(2L,new Date(), new Date(), Status.ACTIVE,"USER"));
 
         List<Role> roles = roleRepository.findAll();
         log.info("Roles was preloaded: {}", roles.size());
